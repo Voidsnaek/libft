@@ -1,117 +1,127 @@
-NAME =	libft.a
-SRC =	srcs/ft_memset.c \
-	srcs/ft_bzero.c \
-	srcs/ft_memcpy.c \
-	srcs/ft_memccpy.c \
-	srcs/ft_memmove.c \
-	srcs/ft_memchr.c \
-	srcs/ft_memcmp.c \
-	srcs/ft_strlen.c \
-	srcs/ft_strdup.c \
-	srcs/ft_strcpy.c \
-	srcs/ft_strncpy.c \
-	srcs/ft_strcat.c \
-	srcs/ft_strncat.c \
-	srcs/ft_strlcat.c \
-	srcs/ft_strchr.c \
-	srcs/ft_strrchr.c \
-	srcs/ft_strstr.c \
-	srcs/ft_strnstr.c \
-	srcs/ft_strcmp.c \
-	srcs/ft_strncmp.c \
-	srcs/ft_atoi.c \
-	srcs/ft_isalpha.c \
-	srcs/ft_isdigit.c \
-	srcs/ft_isalnum.c \
-	srcs/ft_isascii.c \
-	srcs/ft_isprint.c \
-	srcs/ft_toupper.c \
-	srcs/ft_tolower.c \
-	srcs/ft_memalloc.c \
-	srcs/ft_memdel.c \
-	srcs/ft_strnew.c \
-	srcs/ft_strdel.c \
-	srcs/ft_strclr.c \
-	srcs/ft_striter.c \
-	srcs/ft_striteri.c \
-	srcs/ft_strmap.c\
-	srcs/ft_strmapi.c \
-	srcs/ft_strequ.c \
-	srcs/ft_strnequ.c \
-	srcs/ft_strsub.c \
-	srcs/ft_strjoin.c \
-	srcs/ft_strtrim.c \
-	srcs/ft_strsplit.c \
-	srcs/ft_itoa.c \
-	srcs/ft_putchar.c \
-	srcs/ft_putstr.c \
-	srcs/ft_putendl.c \
-	srcs/ft_putnbr.c \
-	srcs/ft_putchar_fd.c \
-	srcs/ft_putstr_fd.c \
-	srcs/ft_putendl_fd.c \
-	srcs/ft_putnbr_fd.c
-OBJ =	ft_memset.o \
-	ft_bzero.o \
-	ft_memcpy.o \
-	ft_memccpy.o \
-	ft_memmove.o \
-	ft_memchr.o \
-	ft_memcmp.o \
-	ft_strlen.o \
-	ft_strdup.o \
-	ft_strcpy.o \
-	ft_strncpy.o \
-	ft_strcat.o \
-	ft_strncat.o \
-	ft_strlcat.o \
-	ft_strchr.o \
-	ft_strrchr.o \
-	ft_strstr.o \
-	ft_strnstr.o \
-	ft_strcmp.o \
-	ft_strncmp.o \
-	ft_atoi.o \
-	ft_isalpha.o \
-	ft_isdigit.o \
-	ft_isalnum.o \
-	ft_isascii.o \
-	ft_isprint.o \
-	ft_toupper.o \
-	ft_tolower.o \
-	ft_memalloc.o \
-	ft_memdel.o \
-	ft_strnew.o \
-	ft_strdel.o \
-	ft_strclr.o \
-	ft_striter.o \
-	ft_striteri.o \
-	ft_strmap.o \
-	ft_strmapi.o \
-	ft_strequ.o \
-	ft_strnequ.o \
-	ft_strsub.o \
-	ft_strjoin.o \
-	ft_strtrim.o \
-	ft_strsplit.o \
-	ft_itoa.o \
-	ft_putchar.o \
-	ft_putstr.o \
-	ft_putendl.o \
-	ft_putnbr.o \
-	ft_putchar_fd.o \
-	ft_putstr_fd.o \
-	ft_putendl_fd.o \
-	ft_putnbr_fd.o
-H_DIR =	includes
-FLAGS = -Wall -Werror -Wextra
+NAME	=	libft.a
+C_DIR	=	./
+O_DIR	=	./
+H_DIR	=	./
+SRC	=	$(SRC_DIR)ft_memset.c \
+		$(SRC_DIR)ft_bzero.c \
+		$(SRC_DIR)ft_memcpy.c \
+		$(SRC_DIR)ft_memccpy.c \
+		$(SRC_DIR)ft_memmove.c \
+		$(SRC_DIR)ft_memchr.c \
+		$(SRC_DIR)ft_memcmp.c \
+		$(SRC_DIR)ft_strlen.c \
+		$(SRC_DIR)ft_strdup.c \
+		$(SRC_DIR)ft_strcpy.c \
+		$(SRC_DIR)ft_strncpy.c \
+		$(SRC_DIR)ft_strcat.c \
+		$(SRC_DIR)ft_strncat.c \
+		$(SRC_DIR)ft_strlcat.c \
+		$(SRC_DIR)ft_strchr.c \
+		$(SRC_DIR)ft_strrchr.c \
+		$(SRC_DIR)ft_strstr.c \
+		$(SRC_DIR)ft_strnstr.c \
+		$(SRC_DIR)ft_strcmp.c \
+		$(SRC_DIR)ft_strncmp.c \
+		$(SRC_DIR)ft_atoi.c \
+		$(SRC_DIR)ft_isalpha.c \
+		$(SRC_DIR)ft_isdigit.c \
+		$(SRC_DIR)ft_isalnum.c \
+		$(SRC_DIR)ft_isascii.c \
+		$(SRC_DIR)ft_isprint.c \
+		$(SRC_DIR)ft_toupper.c \
+		$(SRC_DIR)ft_tolower.c \
+		$(SRC_DIR)ft_memalloc.c \
+		$(SRC_DIR)ft_memdel.c \
+		$(SRC_DIR)ft_strnew.c \
+		$(SRC_DIR)ft_strdel.c \
+		$(SRC_DIR)ft_strclr.c \
+		$(SRC_DIR)ft_striter.c \
+		$(SRC_DIR)ft_striteri.c \
+		$(SRC_DIR)ft_strmap.c\
+		$(SRC_DIR)ft_strmapi.c \
+		$(SRC_DIR)ft_strequ.c \
+		$(SRC_DIR)ft_strnequ.c \
+		$(SRC_DIR)ft_strsub.c \
+		$(SRC_DIR)ft_strjoin.c \
+		$(SRC_DIR)ft_strtrim.c \
+		$(SRC_DIR)ft_strsplit.c \
+		$(SRC_DIR)ft_itoa.c \
+		$(SRC_DIR)ft_putchar.c \
+		$(SRC_DIR)ft_putstr.c \
+		$(SRC_DIR)ft_putendl.c \
+		$(SRC_DIR)ft_putnbr.c \
+		$(SRC_DIR)ft_putchar_fd.c \
+		$(SRC_DIR)ft_putstr_fd.c \
+		$(SRC_DIR)ft_putendl_fd.c \
+		$(SRC_DIR)ft_putnbr_fd.c
+OBJ	=	$(OBJ_DIR)ft_memset.o \
+		$(OBJ_DIR)ft_bzero.o \
+		$(OBJ_DIR)ft_memcpy.o \
+		$(OBJ_DIR)ft_memccpy.o \
+		$(OBJ_DIR)ft_memmove.o \
+		$(OBJ_DIR)ft_memchr.o \
+		$(OBJ_DIR)ft_memcmp.o \
+		$(OBJ_DIR)ft_strlen.o \
+		$(OBJ_DIR)ft_strdup.o \
+		$(OBJ_DIR)ft_strcpy.o \
+		$(OBJ_DIR)ft_strncpy.o \
+		$(OBJ_DIR)ft_strcat.o \
+		$(OBJ_DIR)ft_strncat.o \
+		$(OBJ_DIR)ft_strlcat.o \
+		$(OBJ_DIR)ft_strchr.o \
+		$(OBJ_DIR)ft_strrchr.o \
+		$(OBJ_DIR)ft_strstr.o \
+		$(OBJ_DIR)ft_strnstr.o \
+		$(OBJ_DIR)ft_strcmp.o \
+		$(OBJ_DIR)ft_strncmp.o \
+		$(OBJ_DIR)ft_atoi.o \
+		$(OBJ_DIR)ft_isalpha.o \
+		$(OBJ_DIR)ft_isdigit.o \
+		$(OBJ_DIR)ft_isalnum.o \
+		$(OBJ_DIR)ft_isascii.o \
+		$(OBJ_DIR)ft_isprint.o \
+		$(OBJ_DIR)ft_toupper.o \
+		$(OBJ_DIR)ft_tolower.o \
+		$(OBJ_DIR)ft_memalloc.o \
+		$(OBJ_DIR)ft_memdel.o \
+		$(OBJ_DIR)ft_strnew.o \
+		$(OBJ_DIR)ft_strdel.o \
+		$(OBJ_DIR)ft_strclr.o \
+		$(OBJ_DIR)ft_striter.o \
+		$(OBJ_DIR)ft_striteri.o \
+		$(OBJ_DIR)ft_strmap.o \
+		$(OBJ_DIR)ft_strmapi.o \
+		$(OBJ_DIR)ft_strequ.o \
+		$(OBJ_DIR)ft_strnequ.o \
+		$(OBJ_DIR)ft_strsub.o \
+		$(OBJ_DIR)ft_strjoin.o \
+		$(OBJ_DIR)ft_strtrim.o \
+		$(OBJ_DIR)ft_strsplit.o \
+		$(OBJ_DIR)ft_itoa.o \
+		$(OBJ_DIR)ft_putchar.o \
+		$(OBJ_DIR)ft_putstr.o \
+		$(OBJ_DIR)ft_putendl.o \
+		$(OBJ_DIR)ft_putnbr.o \
+		$(OBJ_DIR)ft_putchar_fd.o \
+		$(OBJ_DIR)ft_putstr_fd.o \
+		$(OBJ_DIR)ft_putendl_fd.o \
+		$(OBJ_DIR)ft_putnbr_fd.o
+INCLUDE	=	-I$(H_DIR)
+HEADER	=	libft.h
+FLAGS	=	-Wall -Werror -Wextra
+CC	=	gcc
+RM	=	rm -f
 
-all:
-	gcc $(FLAGS) -c $(SRC) -I$(H_DIR)
-	ar -rcs $(NAME) $(OBJ)
-clean:
-	rm -f $(OBJ)
-fclean:	clean
-	rm -f $(NAME)
-re:	fclean
-	make
+.PHONY	:	all clean fclean re
+
+all		:	$(NAME)
+$(OBJ)	:
+		$(CC) -c $(FLAG) $(INCLUDE) $(C_DIR)$(SRC)
+$(NAME)	:	$(OBJ)
+		ar rc $(NAME) $(O_DIR)$(OBJ)
+		ranlib $(NAME)
+clean	:
+		$(RM) $(O_DIR)$(OBJ)
+fclean	:	clean
+		$(RM) $(NAME)
+re		:	fclean all
